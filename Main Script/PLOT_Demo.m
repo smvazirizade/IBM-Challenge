@@ -6,6 +6,8 @@ load(InputAddress)
 
 
 Range=[0:.01:40];
+figure
+colormap winter
 for i=1:length(Results)  % For each simulated recovery path
     RP=0;
     Data=0;
@@ -18,7 +20,7 @@ for i=1:length(Results)  % For each simulated recovery path
     %stairs(cumsum(RP(:,2)),RP(:,1))
     Data=[cumsum(RP(:,2)),RP(:,1)];
     %Data(end,:)=[Range(end),47905];
-    stairs(Data(:,1),Data(:,2))
+    stairs(Data(:,1),Data(:,2),'Color', [0.5 0.5 0.5])
     DataInterp(:,i) = interp1(Data(:,1),Data(:,2),Range,'previous');
 %     DataInterp(sum(~isnan(DataInterp))+1:end)=max(Data);
     DataInterp(isnan(DataInterp))=max(Data(:,2));
@@ -26,12 +28,14 @@ for i=1:length(Results)  % For each simulated recovery path
     xlabel('Time (Days)')
     ylabel('Number of People with Electricity')
 end
+colormap winter
+
 
 Mean=mean(DataInterp,2);
 SD=std(DataInterp,1,2);
-stairs(Range,Mean,'LineWidth',2)
-stairs(Range,Mean+SD,'LineWidth',2))
-stairs(Range,Mean-SD)
+stairs(Range,Mean,'k','LineWidth',1.5)
+stairs(Range,Mean+SD,'r','LineWidth',1.5)
+stairs(Range,Mean-SD,'r','LineWidth',1.5)
 
 figure
 for i=1:length(Results)  % For each simulated recovery path
