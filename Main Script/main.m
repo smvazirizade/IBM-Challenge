@@ -3,7 +3,8 @@
 clc; clear all; close all;
 
 %% Load and cleaning adjacency matrix
-load adj42.mat;                    % Load Adjacency Matrix .mat that models Electical power network topology
+InputAddress = fullfile('Input','adj42.mat');
+load(InputAddress);                    % Load Adjacency Matrix .mat that models Electical power network topology
 adj=adj42; clear adj42;            %Change the name to adj
 adj(1,:)=[];adj(:,1)=[];           % Delete the heads & rows' names (41x41)
 
@@ -124,5 +125,6 @@ for i=1:1
     Pullnos{i}=pullno;
     clear EPPL;
 end
+
 %save Result.mat We deactivated it to not change our demo results go to the
 %plot to see the final results

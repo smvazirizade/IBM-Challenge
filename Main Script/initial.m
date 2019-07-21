@@ -6,8 +6,8 @@
 % DB= Damages in Bridges                      CB= Check in Bridges
 
 function [DE,CE,DW,CW,DH,CH,DR,CR,DB,CB]= initial(nrand)
-
-load GilroyHazard.mat
+InputAddress = fullfile('Input','GilroyHazard.mat');
+load(InputAddress)
 %nrand=10;
 
 Rfrg=rand(nrand,size(Elec,1));    % Generate Random Numbers
