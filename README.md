@@ -1,10 +1,5 @@
 # IBM-Challenge
 This script has been generated 2019 IBM Code Global Challenge.
-# Subject 1
-
-## Subject 1.1
-
-## Subject 1.1.1
 
 NOTE: The code in this folder runs under Windows and MacOS.
 
