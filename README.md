@@ -25,7 +25,8 @@ The steps of the proposed framework are as follows,
 2- The fragilities (related to the hazard) of each component are assigned. 
 [initial.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/initial.m)  
 3- The interdependencies between and within networks are modeled with the graph theory to capture the cascading effects following disasters and throughout recovery.  
-4- Simulate the hazard and find the distribution of intensities for each component (find in the GilroyHazard.m file).  
+4- Simulate the hazard and find the distribution of intensities for each component. 
+[GilroyHazard.mat](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/Input/GilroyHazard.mat)  
 5- Compute the level of damage and functionality of each node. 
 [initial.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/initial.m)   
 6- Determine the downtime, the number of repair crews, and the repair budget.  
