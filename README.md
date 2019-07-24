@@ -1,5 +1,5 @@
 # IBM-Challenge
-This script has been generated 2019 IBM Code Global Challenge.
+This script has been generated for 2019 IBM Code Global Challenge.
 
 # Model and Optimize Community Recovery Process: An Approximate Dynamic Approach
 
