@@ -9,17 +9,17 @@ During the recovery process, the decision maker must select recovery actions seq
 i.    The framework enables to balance the desire for low present cost with the undesirability of high future costs ( this is referred to as “non-myopic agent” or look-ahead property).  
 ii.    It can consider different sources of uncertainties.  
 iii.    It makes decisions periodically to not only take advantage of information that becomes available when recovery actions are in progress but also to adapt to disturbances during the recovery process. This is very important to absorb cascading hazards like strong aftershocks, postdisaster fires, etc.  
-v.    The methodology considers different types of dependencies and interdependencies among networks because a single decision can trigger cascading effects in multiple networks at the community level.  
+iv.    The methodology considers different types of dependencies and interdependencies among networks because a single decision can trigger cascading effects in multiple networks at the community level.  
 
-vi.   It can handle multi-objective tasks, which are common in real-world domains. The interconnectedness among networks and probable conflicts among competing objectives complicate the decision-making procedure.  
+v.   It can handle multi-objective tasks, which are common in real-world domains. The interconnectedness among networks and probable conflicts among competing objectives complicate the decision-making procedure.  
 
-vii.    The framework considers different constraints, such as time constraints, limited budget and repair crew, and current regional entities’ policies.   
+vi.    The framework considers different constraints, such as time constraints, limited budget and repair crew, and current regional entities’ policies.   
 
-viii. The framework considers different risk behaviors of policymakers from risk-neutral to risk-averse.  
+vii. The framework considers different risk behaviors of policymakers from risk-neutral to risk-averse.  
 
 ## Framework Steps
-The steps of the proposed framework are as follows (find in the main.m file):  
-1- The topology of critical infrastructure systems is modeled (we modeled the Electrical Power Network of Gilory, CA, USA,find in the adj42.m file).  
+The steps of the proposed framework are as follows,  [main.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/main.m):
+1- The topology of critical infrastructure systems is modeled (we modeled the Electrical Power Network of Gilory, CA, USA,[adj42.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/Input/adj42.mat).find in the adj42.m file).  
 2- The fragilities (related to the hazard) of each component are assigned (find in the initial.m file).  
 3- The interdependencies between and within networks are modeled with the graph theory to capture the cascading effects following disasters and throughout recovery.  
 4- Simulate the hazard and find the distribution of intensities for each component (find in the GilroyHazard.m file).  
