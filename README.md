@@ -45,6 +45,6 @@ The workflow implemented in this folder is:
 
 
 Also, this folder includes a demo result, 
-[ResultDemo.mat](https://github.com/smvazirizade/IBM-Challenge/tree/master/Main%20Script/Output). Aslo, 
-[PLOT_Demo.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/PLOT_Demo.m) shows the imporvevment in community recovery process.
+[ResultDemo.mat](https://github.com/smvazirizade/IBM-Challenge/tree/master/Main%20Script/Output). Furthermore, 
+[PLOT_Demo.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/PLOT_Demo.m) shows the imporvevment in the community recovery process using the aforementioned data.
 
