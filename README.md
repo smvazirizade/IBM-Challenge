@@ -21,7 +21,7 @@ vii. The framework considers different risk behaviors of policymakers from risk-
 The steps of the proposed framework are as follows, 
 [main.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/main.m):  
 1- The topology of critical infrastructure systems is modeled (we modeled the Electrical Power Network of Gilory, CA, USA. 
-[adj42.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/Input/adj42.mat).  
+[adj42.mat](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/Input/adj42.mat).  
 2- The fragilities (related to the hazard) of each component are assigned. 
 [initial.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/initial.m)  
 3- The interdependencies between and within networks are modeled with the graph theory to capture the cascading effects following disasters and throughout recovery.  
@@ -32,9 +32,10 @@ The steps of the proposed framework are as follows,
 7- Based on the proposed MDP framework define the state and action spaces.  
 8- Determine the optimum repair action in each time slot based on the proposed rollout algorithm as follows; 
 ### Rollout Steps 
-8.1- Compute all possible actions in each time slot (find in the genarms.m file).  
+8.1- Compute all possible actions in each time slot. 
+[genarms.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/genarms.m)    
 8.2- Simulate the available base policy and select the best one concerning the policymaker's preference. 
-[genrewards.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/genarms.m)  
+[genrewards.m](https://github.com/smvazirizade/IBM-Challenge/blob/master/Main%20Script/genrewards.m)  
 8.3- Apply the best action in each time slot and repeats it until the end of recovery and reach to the rollout policy.  
 It is mathematically guaranteed that rollout can improve the base policy.  
 NOTE: The code in this folder runs under Windows and MacOS.  
